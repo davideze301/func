@@ -1,0 +1,54 @@
+<!DOCKTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+</html>
+<body>
+<div class="whole">
+	<!-- <p style="font-size:40px;"><b>Calculator</b></p> -->
+	<div class="form"> <br>
+		<input type="text" id="output">
+	</div>
+	<div class="rowA">
+		<button style="color:white;background-color:grey;border-radius:20px;padding:24px;border:none;" onclick="document.getElementById('output').value =''" ><b>AC<br></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='+/-'"><b>+/-</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='%'" ><b>%</b></button>
+        <button style="color:white;background-color:darkorange;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='/'" ><b>/</b></button>
+		
+	</div>
+	<div class="row1">
+		<button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='7'" ><b>7</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='8'" ><b>8</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='9'" ><b>9</b></button>
+        <button style="color:white;background-color:darkorange;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='*'" ><b>*</b></button>
+		
+	</div>
+	<div class="row2">
+		<button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='4'" ><b>4</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='5'" ><b>5</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='6'" ><b>6</b></button>
+        <button style="color:white;background-color:darkorange;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='-'"><b>-</b></button>
+		
+	</div>
+	<div class="row3">
+		<button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='1'"><b>1</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='2'"><b>2</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='3'"><b>3</b></button>
+        <button style="color:white;background-color:darkorange;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='+'"><b>+</b></button>
+		
+	</div>
+	<div class="row4">
+		<button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none" onclick="document.getElementById('output').value +='0'"><b>0</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='.'"><b>.</b></button>
+        <button style="color:white;background-color:grey;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value +='**'" ><b>**</b></button>
+        <button style="color:white;background-color:darkorange;border-radius:20%;padding:25px;border:none;" onclick="document.getElementById('output').value= eval(document.getElementById('output').value )">=</button>
+       
+		
+	</div>
+</div>
+	<script>
+		
+		let outputEl = document.getElementById('output'); 
+	</script>
